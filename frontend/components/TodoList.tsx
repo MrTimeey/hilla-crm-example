@@ -1,8 +1,9 @@
 import {ToDo} from "../types.ts";
 import TodoItem from "./TodoItem.tsx";
+import TodoTO from "Frontend/generated/com/example/application/data/TodoTO.ts";
 
 interface TodoListProps {
-    todos: Array<ToDo>
+    todos: Array<TodoTO>
     toggleTodo: (id: string, completed: boolean) => void;
     deleteTodo: (id: string) => void;
 }
